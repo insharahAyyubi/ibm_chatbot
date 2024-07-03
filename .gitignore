@@ -1,4 +1,6 @@
 # Logs
+key = 00728414-f529-402e-9c83-609131f1e3f2
+
 logs
 *.log
 npm-debug.log*
