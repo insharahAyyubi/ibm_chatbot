@@ -1,0 +1,12 @@
+.chatbot-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(29, 0, 50);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
