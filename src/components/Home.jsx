@@ -4,7 +4,7 @@ function Home() {
     return (
         <div className="mainDiv">
           <div className="leftComp">
-            <img src="/logo_main.png" alt="robo-img" />
+           <img src="/logo_main.png" alt="robo-img" />
           </div>
           <div className="rightComp">
             <div className="heading">Welcome to Career Compass</div>

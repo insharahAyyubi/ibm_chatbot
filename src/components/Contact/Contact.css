@@ -1,170 +1,181 @@
+.contact {
+  margin: 30px auto;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(247, 244, 244, 0.242);
+  border-radius: 10px;
+  padding: 40px;
+  position: relative;
+  top:1rem;
+}
 
+.contact-col {
+  flex-basis: 48%;
+  margin-right: 60px;
+  max-height: 100vh;
+}
+
+.contact-col .msgImg {
+  max-width: 30px;
+  margin-left: 10px;
+}
+
+.contact-col h3 {
+  color: #012041;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.contact-col p {
+  max-width: 650px;
+  list-style: 0.3;
+}
+
+.contact-col ul li {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact-col ul li img {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.contact-col ul {
+  padding: 0;
+}
+
+.contact form input,
+.contact form textarea {
+  display: block;
+  width: 100%;
+  background: #ebecfed0;
+  padding: 12px;
+  border: 0;
+  border-radius: 12px;
+  margin-top: 8px;
+  outline: 0;
+  resize: none;
+}
+
+.contact-col .btn {
+  margin-top: 20px;
+}
+
+.contact span {
+  display: block;
+  margin: 20px 0;
+}
+
+/* Media Queries */
+
+/* Large screens (976px and above) */
+@media (min-width: 976px) {
+  body {
+    background-size: 100% 100vh;
+  }
   .contact {
-    margin: 30px auto;
-    max-width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(247, 244, 244, 0.242);
-    border-radius: 10px;
-    padding: 40px;
+    max-width: 80%;
+    top: 2rem;
+    margin-bottom: 20px;
   }
-  
   .contact-col {
-    flex-basis: 48%;
-    margin-right: 60px;
+    flex-basis: 40%;
   }
-  
-  .contact-col .msgImg {
-    max-width: 30px;
-    margin-left: 10px;
+}
+
+/* Medium screens (768px to 975px) */
+@media (min-width: 768px) and (max-width: 975px) {
+  body {
+    background-size: 100% 200vh; /* adjust background size to a larger height on small screens */
   }
-  
-  .contact-col h3 {
-    color: #012041;
-    font-weight: 500;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    margin-top: 0px;
+  .contact {
+    max-width: 75%;
+    margin-bottom: 20px;
+    top: 3rem;
   }
-  
-  .contact-col p {
-    max-width: 650px;
-    list-style: 0.3;
+  .contact-col {
+    flex-basis: 45%;
   }
-  
   .contact-col ul li {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
+    margin: 15px 0;
   }
-  
   .contact-col ul li img {
-    width: 20px;
-    margin-right: 15px;
+    width: 18px;
+    margin-right: 12px;
   }
-  
-  .contact-col ul {
-    padding: 0;
+}
+
+/* Small screens (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  body {
+    background-size: 100% 300vh; /* adjust background size to a larger height on small screens */
   }
-  
-  .contact form input, .contact form textarea {
-    display: block;
-    width: 100%;
-    background: #ebecfed0;
-    padding: 12px;
-    border: 0;
-    border-radius: 12px;
-    margin-top: 8px;
-    outline: 0;
-    resize: none;
+  .contact {
+    max-width: 65%;
+    align-items: normal;
+    flex-direction: column;
+    padding-bottom: 10px;
+    top:12rem;
   }
-  
+
+  .contact-col {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+
+  .contact-col ul li {
+    margin: 10px 0;
+  }
+  .contact-col ul li img {
+    width: 15px;
+    margin-right: 10px;
+  }
+  .contact form input,
+  .contact form textarea {
+    padding: 10px;
+    margin-top: 5px;
+  }
+}
+
+/* Extra small screens (below 576px) */
+@media (max-width: 575px) {
+  body {
+    background-size: 100% 300vh; /* adjust background size to a larger height on small screens */
+  }
+  .contact {
+    flex-direction: column;
+    max-width: 80%;
+    align-items: normal;
+    top:15rem;
+  }
+  .contact-col {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .contact-col p {
+    max-width: 300px;
+  }
+  .contact-col ul li {
+    margin: 5px 0;
+  }
+  .contact-col ul li img {
+    width: 12px;
+    margin-right: 8px;
+  }
+  .contact form input,
+  .contact form textarea {
+    padding: 8px;
+    margin-top: 3px;
+    max-width: 90%;
+  }
   .contact-col .btn {
-    margin-top: 20px;
+    margin-top: 25px;
   }
-  
-  .contact span {
-    display: block;
-    margin: 20px 0;
-  }
-  
-  /* Media Queries */
-  
-  /* Large screens (976px and above) */
-  @media (min-width: 976px) {
-    body{
-      background-size: 100% 100vh; 
-    }
-    .contact {
-      max-width: 80%;
-    }
-    .contact-col {
-      flex-basis: 40%;
-    }
-  }
-  
-  /* Medium screens (768px to 975px) */
-  @media (min-width: 768px) and (max-width: 975px) {
-    body {
-        background-size: 100% 200vh; /* adjust background size to a larger height on small screens */
-      }
-    .contact {
-      max-width: 75%;
-      margin-bottom: 20px;
-    }
-    .contact-col {
-      flex-basis: 45%;
-    }
-    .contact-col ul li {
-      margin: 15px 0;
-    }
-    .contact-col ul li img {
-      width: 18px;
-      margin-right: 12px;
-    }
-  }
-  
-  /* Small screens (576px to 767px) */
-  @media (min-width: 576px) and (max-width: 767px) {
-    body {
-        background-size: 100% 300vh; /* adjust background size to a larger height on small screens */
-      }
-    .contact {
-        max-width: 65%;
-      align-items: normal;
-      flex-direction: column;
-        padding-bottom: 10px;
-    }
-
-    .contact-col {
-      flex-basis: 50%;
-    }
-
-    .contact-col ul li {
-      margin: 10px 0;
-    }
-    .contact-col ul li img {
-      width: 15px;
-      margin-right: 10px;
-    }
-    .contact form input, .contact form textarea {
-      padding: 10px;
-      margin-top: 5px;
-    }
-  }
-  
-  /* Extra small screens (below 576px) */
-  @media (max-width: 575px) {
-    body {
-        background-size: 100% 300vh; /* adjust background size to a larger height on small screens */
-      }
-    .contact {
-      flex-direction: column;
-      max-width: 80%;
-      align-items: normal;
-    }
-    .contact-col {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-    .contact-col p {
-        max-width: 300px;
-    }
-    .contact-col ul li {
-      margin: 5px 0;
-    }
-    .contact-col ul li img {
-      width: 12px;
-      margin-right: 8px;
-    }
-    .contact form input, .contact form textarea {
-      padding: 8px;
-      margin-top: 3px;
-      max-width: 90%;
-    }
-    .contact-col .btn {
-      margin-top: 25px;
-    }
-  }
+}

@@ -6,7 +6,6 @@ body {
     rgba(255, 0, 255, 0.8)
   );
   background-position: cover;
-
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   margin: 0;
@@ -28,6 +27,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 30px;
   height: 70vh;
+}
+
+.leftComp a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .leftComp,
